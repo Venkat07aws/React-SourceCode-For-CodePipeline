@@ -1,12 +1,12 @@
 #!/bin/bash
 
 #_Change_Working_Directory
-cd /home/ec2-user/server
+cd /home/ubuntu/server
 
 #_Remove_Unused_Code
-rm -rf node_modules
-rm -rf build
+sudo rm -rf node_modules
+sudo rm -rf build
 
 #Install_node_modules_&_Make_React_Build
-npm  install
+sudo apt -y npm  install
 npm run build
